@@ -19,6 +19,7 @@ input_file = "input.txt" --Enter .txt
 
 output_file = string.sub(input_file,1,-5).."-Result.txt"
 
+os.execute("javac WhitakersWords.java\n") --compile java file used
 input = get_lines(input_file)
 --input contains a table of words [1,n] that 
 --are to be searched in Whitakers Words
