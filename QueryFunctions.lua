@@ -21,7 +21,7 @@ function get_site_data(word)
     --This is from hangman.
     --Input: Latin word you would like to get WhitakersWords data from
     --Output: A string that contains the html block from 
-    command = "java WhitakersWords "..word
+    command = "javac WhitakersWords.java\njava WhitakersWords "..word
     print("Executing "..command)
     local handle = io.popen(command)
     local result = handle:read("*a")
