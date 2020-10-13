@@ -21,7 +21,7 @@ public class WhitakersWords {
         String entry = args[0];
         for (int i = 1; i < args.length; i++) entry = entry + "+" + args[i];
 
-        String url = "http://archives.nd.edu/cgi-bin/wordz.pl?keyword=" + entry;
+        String url = "http://archives.nd.edu/cgi-bin/wordz.pl?english=" + entry;
 
         URL myURL = new URL(url);
         BufferedReader in = new BufferedReader(
